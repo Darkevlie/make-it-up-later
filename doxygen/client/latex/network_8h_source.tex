@@ -1,0 +1,65 @@
+\doxysection{network.\+h}
+\hypertarget{network_8h_source}{}\label{network_8h_source}\index{C:/Users/dasha/Documents/proganew/for doc/client/network.h@{C:/Users/dasha/Documents/proganew/for doc/client/network.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ NETWORK\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ NETWORK\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QTcpSocket>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QJsonDocument>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QJsonValue>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QJsonArray>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QJsonObject>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_network_destroyer}{NetworkDestroyer}}}
+\DoxyCodeLine{00015\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_network}{Network}}*\ pInstance;}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_network_destroyer_a3a1457f6d52c0c07f858b11a9f946eea}{\string~NetworkDestroyer}}()\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ this-\/>pInstance;}
+\DoxyCodeLine{00025\ \ \ \ \ \}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_network_destroyer_a38e3aa7a105dc768d35e83701ea46387}{initialize}}(\mbox{\hyperlink{class_network}{Network}}\ *\ p)\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ this-\/>pInstance\ =\ p;}
+\DoxyCodeLine{00033\ \ \ \ \ \}}
+\DoxyCodeLine{00034\ \};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_network}{Network}}\ :\ \textcolor{keyword}{public}\ QObject\ \{}
+\DoxyCodeLine{00040\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_network}{Network}}*\ pInstance;}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ initTCP();}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{static}\ QTcpSocket*\ tcpInstance;}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_network_destroyer}{NetworkDestroyer}}\ destroyer;}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00065\ \ \ \ \ \mbox{\hyperlink{class_network_a3cc2fb4f8fa4d507077e8da85ce5a1c8}{Network}}();}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00070\ \ \ \ \ \mbox{\hyperlink{class_network_a3eccb7fe2c192bf6f13482297783b1b8}{Network}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_network}{Network}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00075\ \ \ \ \ \mbox{\hyperlink{class_network}{Network}}\&\ \mbox{\hyperlink{class_network_a08161e6c1560eb5736918976356b57ff}{operator=}}(\mbox{\hyperlink{class_network}{Network}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00080\ \ \ \ \ \mbox{\hyperlink{class_network_a7a4e19cdb4bf0c7ecf82baa643831492}{\string~Network}}();}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_network_destroyer}{NetworkDestroyer}};}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_network}{Network}}*\ \mbox{\hyperlink{class_network_ae38fd4ac18c456cc75aa295539ef3d2e}{getInstance}}()\ \{}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!pInstance)\ \{}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ pInstance\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_network_a3cc2fb4f8fa4d507077e8da85ce5a1c8}{Network}}();}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ destroyer.\mbox{\hyperlink{class_network_destroyer_a38e3aa7a105dc768d35e83701ea46387}{initialize}}(pInstance);}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ pInstance;}
+\DoxyCodeLine{00098\ \ \ \ \ \}}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00105\ \ \ \ \ QJsonObject\ \mbox{\hyperlink{class_network_ab2e272a718c3c2b3fa4515695118626f}{doRequest}}(QVariantMap\ request);}
+\DoxyCodeLine{00106\ \};}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ NETWORK\_H}}
+
+\end{DoxyCode}

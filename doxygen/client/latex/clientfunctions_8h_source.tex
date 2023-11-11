@@ -1,0 +1,33 @@
+\doxysection{clientfunctions.\+h}
+\hypertarget{clientfunctions_8h_source}{}\label{clientfunctions_8h_source}\index{C:/Users/dasha/Documents/proganew/for doc/client/clientfunctions.h@{C:/Users/dasha/Documents/proganew/for doc/client/clientfunctions.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CLIENTFUNCTIONS\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CLIENTFUNCTIONS\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <network.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QJsonObject>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QSettings>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QVariantMap>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00015\ \textcolor{keywordtype}{bool}\ login(QString\ login,\ QString\ password);}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00023\ \textcolor{keywordtype}{bool}\ register\_account(QString\ login,\ QString\ password);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00029\ QString\ getStat();}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00035\ QJsonArray\ getAllStat();}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00042\ QVariantMap\ getTask(\textcolor{keywordtype}{int}\ taskType);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00050\ \textcolor{keywordtype}{bool}\ checkTask(\textcolor{keywordtype}{int}\ taskId,\ QString\ answer);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00058\ \textcolor{keywordtype}{bool}\ save\_setting(QString\ param\_name,\ QString\ param\_value);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00065\ QString\ load\_setting(QString\ param\_name);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00071\ \textcolor{keywordtype}{bool}\ reset\_settings();}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CLIENTFUNCTIONS\_H}}
+
+\end{DoxyCode}
