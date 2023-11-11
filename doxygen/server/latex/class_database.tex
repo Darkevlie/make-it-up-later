@@ -1,0 +1,85 @@
+\doxysection{Database Class Reference}
+\hypertarget{class_database}{}\label{class_database}\index{Database@{Database}}
+
+
+Класс для работы с базой данных.  
+
+
+
+
+{\ttfamily \#include $<$database.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+QSql\+Query \mbox{\hyperlink{class_database_af5bf6727bf0c93776992d808fd1b1c55}{do\+SQLQuery}} (QString string\+Query)
+\begin{DoxyCompactList}\small\item\em Метод выполнения SQL-\/запроса. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_database}{Database}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_database_ae5a1904f34c6a6c34d5ce932bd33dd19}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Статический метод для получения экземпляра класса \doxylink{class_database}{Database}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_database_a4703c80e6969d33565ea340f768fdadf}\label{class_database_a4703c80e6969d33565ea340f768fdadf} 
+{\bfseries Database} ()
+\begin{DoxyCompactList}\small\item\em Конструктор класса \doxylink{class_database}{Database} (защищенный). \end{DoxyCompactList}\item 
+\Hypertarget{class_database_a83f8b6d2941a4aee50f225e08e97291c}\label{class_database_a83f8b6d2941a4aee50f225e08e97291c} 
+{\bfseries Database} (const \mbox{\hyperlink{class_database}{Database}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Запрещенный конструктор копирования. \end{DoxyCompactList}\item 
+\Hypertarget{class_database_a6c7f04aad691f2be9b7bc8caae0a7cb7}\label{class_database_a6c7f04aad691f2be9b7bc8caae0a7cb7} 
+\mbox{\hyperlink{class_database}{Database}} \& {\bfseries operator=} (\mbox{\hyperlink{class_database}{Database}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Запрещенный оператор присваивания. \end{DoxyCompactList}\item 
+\Hypertarget{class_database_a84d399a2ad58d69daab9b05330e1316d}\label{class_database_a84d399a2ad58d69daab9b05330e1316d} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Database} ()
+\begin{DoxyCompactList}\small\item\em Деструктор класса \doxylink{class_database}{Database}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_database_a4588ee946c5d5c8fcff08e29489f676e}\label{class_database_a4588ee946c5d5c8fcff08e29489f676e} 
+class \mbox{\hyperlink{class_database_a4588ee946c5d5c8fcff08e29489f676e}{Database\+Destroyer}}
+\begin{DoxyCompactList}\small\item\em Дружественный класс для уничтожения базы данных. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс для работы с базой данных. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_database_af5bf6727bf0c93776992d808fd1b1c55}\label{class_database_af5bf6727bf0c93776992d808fd1b1c55} 
+\index{Database@{Database}!doSQLQuery@{doSQLQuery}}
+\index{doSQLQuery@{doSQLQuery}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{doSQLQuery()}{doSQLQuery()}}
+{\footnotesize\ttfamily QSql\+Query Database\+::do\+SQLQuery (\begin{DoxyParamCaption}\item[{QString}]{string\+Query }\end{DoxyParamCaption})}
+
+
+
+Метод выполнения SQL-\/запроса. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string\+Query} & Строка SQL-\/запроса. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+QSql\+Query, результат выполнения запроса. 
+\end{DoxyReturn}
+\Hypertarget{class_database_ae5a1904f34c6a6c34d5ce932bd33dd19}\label{class_database_ae5a1904f34c6a6c34d5ce932bd33dd19} 
+\index{Database@{Database}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_database}{Database}} \texorpdfstring{$\ast$}{*} Database\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Статический метод для получения экземпляра класса \doxylink{class_database}{Database}. 
+
+\begin{DoxyReturn}{Returns}
+Указатель на экземпляр класса \doxylink{class_database}{Database}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/dasha/\+Documents/proganew/for doc/echo\+Server/database.\+h\item 
+C\+:/\+Users/dasha/\+Documents/proganew/for doc/echo\+Server/database.\+cpp\end{DoxyCompactItemize}
